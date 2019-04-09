@@ -1,0 +1,29 @@
+BULK INSERT learningSiteInfo
+FROM 'c:/temp/learningSiteInfo.txt'
+WITH (
+	FIELDTERMINATOR = '\t',
+	ROWTERMINATOR = '\n',
+	FIRSTROW = 2
+	--KEEPIDENTITY
+)
+SELECT * FROM learningSiteInfo
+
+BULK INSERT appInfo
+FROM 'c:/temp/appInfo.txt'
+WITH (
+	FIELDTERMINATOR = '\t',
+	ROWTERMINATOR = '\n',
+	FIRSTROW = 2
+	--KEEPIDENTITY
+)
+SELECT * FROM appInfo
+
+BULK INSERT moduleInfo
+FROM 'c:/temp/moduleInfo.txt'
+WITH (
+	FIELDTERMINATOR = '\t',
+	ROWTERMINATOR = '\n',
+	FIRSTROW = 2
+	--KEEPIDENTITY
+)
+SELECT * FROM moduleInfo

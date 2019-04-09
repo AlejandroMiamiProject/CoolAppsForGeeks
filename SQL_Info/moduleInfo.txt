@@ -1,2 +1,4 @@
-modId	appId	modTopic	modPrice	areModRating	modLanguage	modName	isCurrent	modLink	modType	modDescriptions
-0	0	NULL	0	NULL	NULL	CodingBat Java	NULL	https://codingbat.com/java	NULL	
+modId	appId	modTopic	modPrice	aveModRating	modLanguage	modName	isCurrent	modLink	modType	modDescriptions	modSkillLevel
+1	1	Warmup-1	0	NULL	Java	CodingBat Java	NULL	https://codingbat.com/java/Warmup-1	Simple warmup problems to get started	8
+2	1	String-1	0	NULL	Java	CodingBat Java	NULL	https://codingbat.com/java/String-1	Basic string problems -- no loops	8
+3	1	Logic-1	0	NULL	Java	CodingBat Java	NULL	https://codingbat.com/java/Logic-1	Basic boolean logic puzzles -- if else && || !	8

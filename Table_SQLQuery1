@@ -1,0 +1,71 @@
+CREATE TABLE accounts (
+userID		INT		PRIMARY KEY	IDENTITY
+);
+GO
+
+CREATE TABLE learnAppUsers (
+Id		INT			PRIMARY KEY	IDENTITY,
+userName	VARCHAR(50)	NOT NULL		DEFAULT '',
+Email		NVARCHAR(50)				DEFAULT '',
+phone 		VARCHAR(50)				DEFAULT ''
+)
+
+CREATE TABLE userRoles (
+userId		INT		PRIMARY KEY	IDENTITY,
+roleId		INT		NOT NULL		DEFAULT 0
+)
+
+CREATE TABLE tblStatus (
+	libraryAppId		INT			PRIMARY KEY	IDENTITY,
+	userId			INT			NOT NULL		DEFAULT 0,
+	modId			INT			NOT NULL		DEFAULT 0,
+	isFavorate		VARCHAR(50)				DEFAULT '',
+	isCompelete		VARCHAR(50)				DEFAULT '',
+	isInProcess		VARCHAR(50)				DEFAULT '',
+	isInterested		VARCHAR(50)				DEFAULT '',
+	modRating		NVARCHAR(50)				DEFAULT '',
+	modReview		NVARCHAR(50)				DEFAULT ''
+)
+
+CREATE TABLE userLibraryApp (
+	libraryAppId		INT		PRIMARY KEY	IDENTITY,
+	userId			INT		NOT NULL		DEFAULT 0,
+	statusId		INT		NOT NULL		DEFAULT 0,
+appId			INT		NOT NULL		DEFAULT 0,
+modId			INT		NOT NULL		DEFAULT 0	
+)
+
+CREATE TABLE learningSiteInfo (
+	lsId			INT			PRIMARY KEY	IDENTITY,
+userId			INT					DEFAULT 0,
+lsOwnerName 	VARCHAR(50)			DEFAULT '',
+lsEmail			NVARCHAR(50)				DEFAULT '',
+lsPhoneNumber 	INT						DEFAULT 0,
+lsWebAddress 	NVARCHAR(50)				DEFAULT '',
+lsApproved		NVARCHAR(50)				DEFAULT '',
+lsAppId		INT						DEFAULT 0
+)
+
+CREATE TABLE appInfo (
+	appId			INT			PRIMARY KEY	IDENTITY,
+	appName		VARCHAR(50)	NOT NULL		DEFAULT '',
+	lsId			INT			NOT NULL		DEFAULT 0,
+	appImageLink		NVARCHAR(50)				DEFAULT '',
+	appCatagory		VARCHAR(50)				DEFAULT '',
+	appSystemReq	NVARCHAR(50)				DEFAULT '',
+	appAveRating		NVARCHAR(50)				DEFAULT ''
+)
+
+CREATE TABLE moduleInfo (
+	modId			INT			PRIMARY KEY	IDENTITY,
+	appId			INT						DEFAULT 0,
+	modTopic		VARCHAR(50)				DEFAULT '',
+	modPrice		VARCHAR(50)				DEFAULT '',
+	areModRating		NVARCHAR(50)				DEFAULT '',
+	modLanguage		NVARCHAR(50)				DEFAULT '',
+	modName		VARCHAR(50)				DEFAULT '',
+	isCurrent 		VARCHAR(50)				DEFAULT '',
+	modLink		NVARCHAR(50)				DEFAULT '',
+	modType		VARCHAR(50)				DEFAULT '',
+	modDescriptions	NVARCHAR(50)				DEFAULT ''
+)

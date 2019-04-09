@@ -1,0 +1,4 @@
+lsId	userId	lsOwnerName	lsEmail	lsPhoneNumber	lsWebAddress	lsApproved	lsAppId
+1	0	NickParlante	nick.parlante@cs.stanford.edu	0	https://codingbat.com/java	NULL	0
+2	0	NULL	NULL	0	NULL	NULL	0
+3	0	NULL	NULL	0	NULL	NULL	0

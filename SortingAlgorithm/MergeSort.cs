@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
 
-namespace HelloWorld
+namespace MergeSort
 {
-  class Hello { 
+  class MergeSort { 
     public static int myMax(ArrayList arr){
       int max = 0;
       foreach (var num in arr){

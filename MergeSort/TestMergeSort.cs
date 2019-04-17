@@ -50,15 +50,14 @@ namespace MergeSort
       ArrayList test = new ArrayList();
 
       Console.WriteLine("Unsorted: ");
-      for(int i = 0; i < 50; i++){
+      for(int i = 0; i < 5; i++){
         test.Add(rnd.Next(1, 20));
         Console.Write(test[i] + ", ");
       }
       
-      Console.WriteLine("Sorted: ");
-      Console.WriteLine();
+      Console.WriteLine("\nSorted: ");
       test = mergeSort(test);
-      for(int i = 0; i < 50; i++){
+      for(int i = 0; i < 5; i++){
         Console.Write(test[i] + ", ");
       }
     }

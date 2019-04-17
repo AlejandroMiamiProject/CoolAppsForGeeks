@@ -33,8 +33,8 @@ namespace MergeSort
         int b = myMin(arr);
         upper.Add(a); 
         lower.Add(b);
-        arr.RemoveAt(arr.IndexOf(a));
-        arr.RemoveAt(arr.IndexOf(b));
+        arr.Remove(a);
+        arr.Remove(b);
       }
       if(arr.Count == 1){
         lower.Add(arr[0]);

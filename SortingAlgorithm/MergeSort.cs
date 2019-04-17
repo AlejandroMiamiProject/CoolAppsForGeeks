@@ -48,14 +48,18 @@ namespace MergeSort
     {
       Random rnd = new Random();
       ArrayList test = new ArrayList();
+
+      Console.WriteLine("Unsorted: ");
       for(int i = 0; i < 50; i++){
         test.Add(rnd.Next(1, 20));
-        Console.WriteLine(test[i]);
+        Console.Write(test[i] + ", ");
       }
       
+      Console.WriteLine("Sorted: ");
+      Console.WriteLine();
       test = mergeSort(test);
       for(int i = 0; i < 50; i++){
-        Console.WriteLine("N " + test[i]);
+        Console.Write(test[i] + ", ");
       }
     }
   }
